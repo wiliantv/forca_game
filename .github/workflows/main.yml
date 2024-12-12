@@ -26,12 +26,7 @@ jobs:
       - name: Build for Web
         run: |
           flutter pub get
-          flutter build web --base-href "/forca-game/"
-      - name: Upload Web artifacts
-        uses: actions/upload-artifact@v2
-        with:
-          name: web-artifacts
-          path: build/web
+          flutter build web --base-href "/forca_game/"
       - name: Setup Pages
         uses: actions/configure-pages@v5
       - name: Upload artifact
